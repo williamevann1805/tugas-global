@@ -1,0 +1,16 @@
+<h1>EDIT PAGE</h1>
+
+
+<div *ngFor="let isi of dataGlobal">
+{{isi.jurusan}} - {{isi.desc}}
+</div>
+
+
+<div>
+  <input [(ngModel)] = 'namajurusan' type="text" placeholder='Nama Jurusan'> <br>
+  <br>
+  <br>
+  <input [(ngModel)] = 'namajurusannew' type="text" placeholder='New Nama Jurusan'> <br>
+  <input [(ngModel)] = 'descjurusan' type="text" placeholder='New Deskripsi Jurusan'> <br><br>
+  <button (click)=updateData() >Update</button>
+</div>
